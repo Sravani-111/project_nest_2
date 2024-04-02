@@ -1,0 +1,47 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: #ea94d8;
+            font-size: 30px; /* Change the font size */
+        }
+        
+        form {
+            margin-top: 50px; /* Increase space between header and form */
+            text-align: center; /* Align form elements to center */
+        }
+        
+        input[type="number"] {
+            width: 300px; /* Increase input block width */
+            height: 50px; /* Increase input block height */
+            font-size: 30px; /* Change the font size */
+            margin-bottom: 20px; /* Increase space between input blocks */
+            text-align: center; /* Align input text to center */
+        }
+
+        input[type="submit"] {
+            width: 200px; /* Increase button width */
+            height: 70px; /* Increase button height */
+            font-size: 30px; /* Change the font size */
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+
+    <h1> IRIS FLOWER PREDICTION </h1><br>
+    
+    <form method="POST" action="{{url_for('home')}}">
+       <b> Sepal Length:  <input type="number" step="any" name='a' placeholder=""> <br><br>
+        Sepal Width :  <input type="number" step="any" name='b' placeholder=""> <br><br>
+        Petal Length :  <input type="number" step="any" name='c' placeholder=""> <br><br>
+        Petal Width : <input type="number" step="any" name='d' placeholder=""> <br><br><br></b>
+        <input type="submit" value='Predict!'>
+    </form>
+
+   
+</center>
+
+</body>
+</html>

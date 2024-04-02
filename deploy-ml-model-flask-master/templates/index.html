@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Classification Project</title>  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 100vh;
+            background-color: white;
+        }
+
+        .content {
+            width: 55%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .image {
+            width: 45%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 46px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 28px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 18px;
+        }
+
+        /* Responsive layout for small screens */
+        @media screen and (max-width: 600px) {
+            body {
+                flex-direction: column;
+            }
+
+            .content {
+                width: 100%;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+
+            .image {
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        footer button:hover {
+            background-color: #45a049;
+        }
+    </style>      
+</head>
+<body>
+    <div class="content">
+        <h1>Flower Classification Project</h1>
+        <p>Welcome to our flower classification project! In this project, we aim to classify different types of flowers based on their characteristics such as petal length, petal width, sepal length, and sepal width. We utilize machine learning algorithms to accurately identify and categorize various species of flowers.</p>
+        <p>Our project aims to contribute to the field of botany and horticulture by providing an efficient and reliable tool for flower identification. Stay tuned for updates and results from our ongoing research.</p>
+    </div>
+    <div class="image">
+        <img src="deploy-ml-model-flask-master/static/uflower.jpeg" alt="Flower Image">
+    </div>
+    <footer>
+        <a href="home.html"><button>Enter</button></a>
+    </footer>
+</body>
+</html>
